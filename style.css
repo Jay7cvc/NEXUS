@@ -1161,6 +1161,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding-bottom: 120px;
 }
 
 .grid-text-item {
@@ -1176,6 +1177,14 @@ body {
     margin: 0;
     margin-top: 22px;
 }
+
+
+
+
+
+
+
+
 
 .footer {
     background: linear-gradient(135deg, #2a2a2a 0%, #2a0544 70%, #000000 100%);
@@ -1299,10 +1308,22 @@ body {
     color: #8B5CF6;
 }
 
+.map-container iframe {
+    filter: invert(90%) hue-rotate(180deg) contrast(85%);
+    /* Темная тема */
+
+}
 
 
 
-/* Адаптивность */
+
+
+
+
+
+
+
+
 
 
 
