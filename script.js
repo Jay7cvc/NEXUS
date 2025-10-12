@@ -11,4 +11,35 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Анимации при скролле
+document.addEventListener('DOMContentLoaded', function() {
+    const elements = document.querySelectorAll('.scroll-animate');
+    
+    function checkScroll() {
+        elements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight * 0.8) {
+                el.classList.add('animated');
+            }
+        });
+    }
+    
+    window.addEventListener('scroll', checkScroll);
+    checkScroll(); 
+});
+
+
+function throttle(func, delay) {
+    let timeoutId;
+    let lastExecTime = 0;
+    return function (...args) {
+        const currentTime = Date.now();
+        if (currentTime - lastExecTime > delay) {
+            func.apply(this, args);
+            lastExecTime = currentTime;
+        }
+    };
+}
+
+
 
