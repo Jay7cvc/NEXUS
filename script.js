@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const elements = document.querySelectorAll('.fade-element');
     
     // Задержки для этапов появления
-    const delays = [1600, 800, 1900]; // Лого+название → Навигация → Текст
+    const delays = [1100, 400, 1200]; // Лого+название → Навигация → Текст
     
     elements.forEach((element, index) => {
         setTimeout(() => {
@@ -40,6 +40,3 @@ function throttle(func, delay) {
         }
     };
 }
-
-
-
