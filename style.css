@@ -1671,7 +1671,14 @@ body {
 
     .service-card {
         cursor: pointer;
-        -webkit-tap-highlight-color: transparent; /* Убирает синий highlight */
+        -webkit-tap-highlight-color: transparent;
+        /* Убирает синий highlight */
+    }
+
+    .service-item.active .service-price,
+    .service-item:active .service-price {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -1708,7 +1715,14 @@ body {
 
     .service-card {
         cursor: pointer;
-        -webkit-tap-highlight-color: transparent; /* Убирает синий highlight */
+        -webkit-tap-highlight-color: transparent;
+        /* Убирает синий highlight */
+    }
+
+    .service-item.active .service-price,
+    .service-item:active .service-price {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -1725,7 +1739,14 @@ body {
 
     .service-card {
         cursor: pointer;
-        -webkit-tap-highlight-color: transparent; /* Убирает синий highlight */
+        -webkit-tap-highlight-color: transparent;
+        /* Убирает синий highlight */
+    }
+
+    .service-item.active .service-price,
+    .service-item:active .service-price {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -1756,7 +1777,14 @@ body {
 
     .service-card {
         cursor: pointer;
-        -webkit-tap-highlight-color: transparent; /* Убирает синий highlight */
+        -webkit-tap-highlight-color: transparent;
+        /* Убирает синий highlight */
+    }
+
+    .service-item.active .service-price,
+    .service-item:active .service-price {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -1775,7 +1803,14 @@ body {
 
     .service-card {
         cursor: pointer;
-        -webkit-tap-highlight-color: transparent; /* Убирает синий highlight */
+        -webkit-tap-highlight-color: transparent;
+        /* Убирает синий highlight */
+    }
+
+    .service-item.active .service-price,
+    .service-item:active .service-price {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -1798,7 +1833,14 @@ body {
 
     .service-card {
         cursor: pointer;
-        -webkit-tap-highlight-color: transparent; /* Убирает синий highlight */
+        -webkit-tap-highlight-color: transparent;
+        /* Убирает синий highlight */
+    }
+
+    .service-item.active .service-price,
+    .service-item:active .service-price {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
