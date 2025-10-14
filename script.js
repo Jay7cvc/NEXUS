@@ -74,10 +74,11 @@ function setupServiceCopy() {
                     if (notification.classList.contains('show')) {
                         notification.classList.remove('show');
                     }
-                }, 4300);
+                }, 4500);
             });
         });
     });
 }
 
 document.addEventListener('DOMContentLoaded', setupServiceCopy);
+
