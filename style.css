@@ -1153,7 +1153,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.service-card:hover .card-content {
+.service-card .card-content:hover  {
     background: rgba(58, 58, 58, 0.95);
     height: 100%;
     display: flex;
@@ -2002,3 +2002,4 @@ body {
         transform: scale(1);
     }
 }
+
