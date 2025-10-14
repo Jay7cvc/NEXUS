@@ -1773,8 +1773,13 @@ body {
     }
 }
 
-
-
+@media (hover: none) and (pointer: coarse) {
+    .service-item:active .price,
+    .service-item:focus .price {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 /* ===== SCROLL ANIMATIONS ===== */
@@ -1932,3 +1937,4 @@ body {
         transform: scale(1);
     }
 }
+
