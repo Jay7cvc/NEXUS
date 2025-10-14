@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
 function throttle(func, delay) {
     let timeoutId;
     let lastExecTime = 0;
@@ -40,3 +41,35 @@ function throttle(func, delay) {
         }
     };
 }
+
+function setupServiceCopy() {
+    document.querySelectorAll('.service-card').forEach(card => {
+        const priceTag = card.querySelector('.price-tag');
+        const title = card.querySelector('.service-title').textContent;
+        const desc = card.querySelector('.service-desc').textContent;
+        const price = priceTag.textContent;
+        
+        priceTag.addEventListener('click', function() {
+            const serviceText = `Здравствуйте! Хочу заказать услугу:\n${title}\n${desc}\n${price}`;
+            
+            const preview = document.getElementById('servicePreview');
+            preview.textContent = `${title}\n${desc}\n${price}`;
+            
+            navigator.clipboard.writeText(serviceText).then(() => {
+                const notification = document.getElementById('copyNotification');
+                notification.classList.add('show');
+                
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                    setTimeout(() => {
+                        document.querySelector('.footer').scrollIntoView({ 
+                            behavior: 'smooth' 
+                        });
+                    }, 300);
+                }, 3100); 
+            });
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', setupServiceCopy);
