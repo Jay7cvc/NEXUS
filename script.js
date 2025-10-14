@@ -59,14 +59,22 @@ function setupServiceCopy() {
                 const notification = document.getElementById('copyNotification');
                 notification.classList.add('show');
                 
-                setTimeout(() => {
+                // Обработчик для кнопки связи
+                const contactBtn = notification.querySelector('.contact-btn');
+                contactBtn.onclick = () => {
                     notification.classList.remove('show');
-                    setTimeout(() => {
-                        document.querySelector('.footer').scrollIntoView({ 
-                            behavior: 'smooth' 
-                        });
-                    }, 300);
-                }, 3100); 
+                    // Скролл только при клике на кнопку
+                    document.querySelector('.footer').scrollIntoView({ 
+                        behavior: 'smooth' 
+                    });
+                };
+                
+                // Автоскрытие через 4 секунды БЕЗ скролла
+                setTimeout(() => {
+                    if (notification.classList.contains('show')) {
+                        notification.classList.remove('show');
+                    }
+                }, 4300);
             });
         });
     });
