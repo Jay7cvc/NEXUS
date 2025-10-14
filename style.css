@@ -1669,6 +1669,10 @@ body {
         max-width: 100%;
     }
 
+    .service-card {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent; /* Убирает синий highlight */
+    }
 }
 
 @media (max-width: 768px) {
@@ -1701,6 +1705,11 @@ body {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .service-card {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent; /* Убирает синий highlight */
+    }
 }
 
 @media (max-width: 640px) {
@@ -1712,6 +1721,11 @@ body {
 
     .service-card {
         aspect-ratio: 4/3;
+    }
+
+    .service-card {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent; /* Убирает синий highlight */
     }
 }
 
@@ -1739,6 +1753,11 @@ body {
     .services-grid {
         background: url(img/fon.png);
     }
+
+    .service-card {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent; /* Убирает синий highlight */
+    }
 }
 
 @media (max-width: 480px) {
@@ -1752,6 +1771,11 @@ body {
 
     .map-container iframe {
         height: 200px;
+    }
+
+    .service-card {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent; /* Убирает синий highlight */
     }
 }
 
@@ -1771,15 +1795,14 @@ body {
         padding-right: 7px;
         gap: 5px;
     }
-}
 
-@media (hover: none) and (pointer: coarse) {
-    .service-item:active .price,
-    .service-item:focus .price {
-        opacity: 1;
-        transform: translateY(0);
+    .service-card {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent; /* Убирает синий highlight */
     }
 }
+
+
 
 
 /* ===== SCROLL ANIMATIONS ===== */
@@ -1892,23 +1915,23 @@ body {
 }
 
 .notification-content {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .contact-btn {
-  background: linear-gradient(135deg, #00ff88, #00cc66);
-  color: #000;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  margin-top: 10px;
+    background: linear-gradient(135deg, #00ff88, #00cc66);
+    color: #000;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 .notification-message {
@@ -1916,12 +1939,12 @@ body {
 }
 
 .contact-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 255, 136, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 255, 136, 0.4);
 }
 
 .contact-btn:active {
-  transform: translateY(0);
+    transform: translateY(0);
 }
 
 @keyframes pulse {
@@ -1937,4 +1960,3 @@ body {
         transform: scale(1);
     }
 }
-
