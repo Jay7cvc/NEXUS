@@ -1892,6 +1892,10 @@ body {
   gap: 12px;
 }
 
+.notification-message {
+    padding-top: 7px;
+}
+
 .contact-btn {
   background: linear-gradient(135deg, #00ff88, #00cc66);
   color: #000;
@@ -1928,3 +1932,4 @@ body {
         transform: scale(1);
     }
 }
+
