@@ -207,9 +207,9 @@ body {
         margin-top: 0.1vh;
     }
 
-    .hero-bottom-text p {
+    /*.hero-bottom-text p {
         padding-top: 4.5rem;
-    }
+    }*/
 
     .company-name {
         padding-top: 20vh;
@@ -1892,10 +1892,6 @@ body {
   gap: 12px;
 }
 
-.notification-message {
-    padding-top: 7px;
-}
-
 .contact-btn {
   background: linear-gradient(135deg, #00ff88, #00cc66);
   color: #000;
@@ -1908,6 +1904,10 @@ body {
   font-family: Arial, sans-serif;
   font-size: 14px;
   margin-top: 10px;
+}
+
+.notification-message {
+    padding-top: 7px;
 }
 
 .contact-btn:hover {
@@ -1932,4 +1932,3 @@ body {
         transform: scale(1);
     }
 }
-
