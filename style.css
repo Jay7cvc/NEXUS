@@ -1280,6 +1280,12 @@ body {
     transform: translate(-50%, -50%) scale(1.1);
 }
 
+.price-tag:active {
+    border: solid 1px rgba(103, 38, 255, 0.808);
+    background-color: rgba(54, 0, 59, 0.836);
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.937);
+}
+
 .service-card:hover .price-tag {
     opacity: 1;
 }
@@ -1490,13 +1496,23 @@ body {
 }
 
 @keyframes runLightHorizontal {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(200%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(200%);
+    }
 }
 
 @keyframes runLightVertical {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(200%); }
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(200%);
+    }
 }
 
 .footer-container {
@@ -1719,6 +1735,10 @@ body {
         padding-left: 10px;
         padding-right: 10px;
     }
+
+    .services-grid {
+        background: url(img/fon.png);
+    }
 }
 
 @media (max-width: 480px) {
@@ -1734,9 +1754,6 @@ body {
         height: 200px;
     }
 }
-
-
-
 
 @media (max-width: 380px) {
     .services-grid {
@@ -1867,6 +1884,35 @@ body {
     line-height: 1.4;
     white-space: pre-line;
     border-left: 3px solid #8B5CF6;
+}
+
+.notification-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-btn {
+  background: linear-gradient(135deg, #00ff88, #00cc66);
+  color: #000;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 255, 136, 0.4);
+}
+
+.contact-btn:active {
+  transform: translateY(0);
 }
 
 @keyframes pulse {
