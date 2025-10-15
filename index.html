@@ -91,7 +91,7 @@
     </div>
     <section class="services-grid">
         <div class="grid-text-item scroll-animate animate-left delay-200">
-            <p>Комплексный пакет - единая стратегия, где каждый инструмент
+            <p><b>Комплексный пакет</b> - единая стратегия, где каждый инструмент
                 умножает результат другого и дает шикарный результат.</p>
         </div>
         <div class="service-card scroll-animate animate-left delay-300">
@@ -130,7 +130,7 @@
         </div>
 
         <div class="grid-text-item scroll-animate animate-right delay-200">
-            <p>Сайт - увеличивает продажи от 30%
+            <p><b>Сайт</b> - увеличивает продажи от 30%
                 и становится вашим «круглосуточным продавцом и представителем». </p>
         </div>
 
@@ -168,7 +168,7 @@
         </div>
 
         <div class="grid-text-item scroll-animate animate-left delay-200">
-            <p>СММ - узнаваемость и увеличение продаж в одном
+            <p><b>СММ</b> - узнаваемость и увеличение продаж в одном
                 флаконе. Приводим клиентов, а не пробегающих пользователей.</p>
         </div>
 
@@ -230,7 +230,7 @@
                     </div>
                     <div class="contact-item">
                         <span class="contact-icon">📱</span>
-                        <a href="https://t.me/jay7cvc2">Telegram</a>
+                        <a href="https://t.me/@jay7cvc2">Telegram</a>
                     </div>
                     <div class="contact-item">
                         <span class="contact-icon">🕒</span>
@@ -242,7 +242,7 @@
             <div class="footer-right scroll-animate animate-right delay-300">
                 <div class="map-container">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2348.646873473583!2d27.485281676285783!3d53.93801723028946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc5045fb49b73%3A0xc6e5d83e7fefcce4!2sARENA%20City!5e0!3m2!1sru!2sby!4v1760093710271!5m2!1sru!2sby""
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4697.374474213497!2d27.48487372306558!3d53.93730018624895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1760519594659!5m2!1sru!2sby"
                         width=" 100%" height="300" frameborder="0" loading="lazy" allowfullscreen>
                     </iframe>
                     <div class="map-address">
@@ -257,27 +257,37 @@
             <div class="footer-bottom-container">
                 <p>&copy; 2025 Nexus. Все права защищены.</p>
                 <div class="footer-links">
-                    <a href="#">Политика конфиденциальности</a>
-                    <a href="#">Пользовательское соглашение</a>
+                    <a href="#">Плательщик: Малиновская М.Е.</a>
+                    <a href="#">УНП: АВ6473482 </a>
                 </div>
             </div>
         </div>
     </footer>
+
     <div id="copyNotification" class="copy-notification">
-  <div class="notification-content">
-    <div class="notification-message">
-      Услуга скопирована! 
+        <div class="notification-content">
+            <button class="close-btn">&times;</button>
+            <div class="notification-message">
+                Услуга скопирована!
+            </div>
+            <div id="servicePreview" class="service-preview"></div>
+
+            <div class="phone-input-container">
+                <input type="tel" class="phone-input" placeholder="+375 (__) ___ __ __" id="userPhone">
+                <div class="phone-hint">Оставьте номер для связи</div>
+            </div>
+
+            <button class="contact-btn">
+                Отправить на почту
+            </button>
+        </div>
     </div>
-    <div id="servicePreview" class="service-preview"></div>
-    <button class="contact-btn">
-      Перейти к способам связи 
-    </button>
-  </div>
-</div>
+    <div class="alert-overlay" id="alertOverlay"></div>
+    <div class="custom-alert" id="customAlert">
+        <button class="alert-close-btn">&times;</button>
+        С вами свяжется специалист<br>в ближайшее время!
+    </div>
     <script src="script.js"></script>
 </body>
 
 </html>
-
-
-
