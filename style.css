@@ -2134,3 +2134,12 @@ body {
     background: rgba(255, 255, 255, 0.1);
     transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+    .price-tag {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+}
+
