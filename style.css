@@ -2141,5 +2141,20 @@ body {
         opacity: 1 !important;
         visibility: visible !important;
     }
+
+    /* Для десктопа - ховер */
+@media (min-width: 769px) {
+    .service-card:hover .price-tag {
+        display: block;
+    }
 }
+
+/* Для мобилок - показываем по клику на карточку */
+@media (max-width: 768px) {
+    .service-card.active .price-tag {
+        display: block !important;
+    }
+}
+}
+
 
