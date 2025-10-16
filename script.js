@@ -140,3 +140,12 @@ function setupServiceCopy() {
 }
 
 document.addEventListener('DOMContentLoaded', setupServiceCopy);
+
+// Всегда показываем price-tag на мобилках
+if (window.innerWidth <= 768) {
+    document.querySelectorAll('.price-tag').forEach(tag => {
+        tag.style.display = 'block';
+        tag.style.opacity = '1';
+        tag.style.visibility = 'visible';
+    });
+}
