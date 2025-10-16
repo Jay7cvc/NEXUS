@@ -149,3 +149,25 @@ if (window.innerWidth <= 768) {
         tag.style.visibility = 'visible';
     });
 }
+
+// Обработчик клика на карточку для мобилок
+document.querySelectorAll('.service-card').forEach(card => {
+    card.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768 && !e.target.closest('.price-tag')) {
+            document.querySelectorAll('.service-card').forEach(c => {
+                c.classList.remove('active');
+            });
+            this.classList.add('active');
+        }
+    });
+});
+
+// Закрытие при клике вне карточки
+document.addEventListener('click', function(e) {
+    if (window.innerWidth <= 768 && !e.target.closest('.service-card')) {
+        document.querySelectorAll('.service-card').forEach(c => {
+            c.classList.remove('active');
+        });
+    }
+});
+
