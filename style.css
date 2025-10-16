@@ -2135,14 +2135,7 @@ body {
     transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
-    .price-tag {
-        display: block !important;
-        opacity: 1 !important;
-        visibility: visible !important;
-    }
-
-    /* Для десктопа - ховер */
+/* УДАЛИТЬ старый ховер и добавить этот */
 @media (min-width: 769px) {
     .service-card:hover .price-tag {
         display: block;
@@ -2155,6 +2148,6 @@ body {
         display: block !important;
     }
 }
-}
+
 
 
